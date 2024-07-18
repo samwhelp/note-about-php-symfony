@@ -114,7 +114,17 @@ run
 * [composer/src/Composer/Compiler.php](https://github.com/composer/composer/blob/main/src/Composer/Compiler.php)
 
 
+## Symfony Console App Case
+
+* [composer](https://github.com/composer/composer)
+* [leaf-cli](https://github.com/leafsphp/cli)
+
+
+
+
 ## Notice
+
+### Building Phar Requirement
 
 edit `/etc/php.ini`
 
