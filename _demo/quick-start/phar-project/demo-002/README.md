@@ -81,7 +81,7 @@ or run
 
 ## Symfony / Docs
 
-* [Console Commands](https://symfony.com/doc/current/console.html)
+* Console Commands / [Creating a Command](https://symfony.com/doc/current/console.html#creating-a-command)
 
 
 
