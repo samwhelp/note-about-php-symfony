@@ -49,7 +49,7 @@ or run
 
 
 
-## build app
+## build phar
 
 run
 
@@ -64,6 +64,27 @@ or run
 ```
 
 
+## phar usage
+
+run
+
+``` sh
+./demo.phar help app:create-user
+```
+
+
+run
+
+``` sh
+./demo.phar app:create-user test
+```
+
+
+run
+
+``` sh
+./demo.phar app:create-user --user-role=Admin adm
+```
 
 
 ## Link
@@ -82,6 +103,7 @@ or run
 ## Symfony / Docs
 
 * Console Commands / [Creating a Command](https://symfony.com/doc/current/console.html#creating-a-command)
+* [Console Input (Arguments & Options)](https://symfony.com/doc/current/console/input.html)
 
 
 
