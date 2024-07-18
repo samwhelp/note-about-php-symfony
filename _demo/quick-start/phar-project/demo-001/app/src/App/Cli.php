@@ -18,7 +18,11 @@ use Symfony\Component\Console\Application;
 
 class Cli {
 
-	public function run () {
+
+
+
+	public function run ()
+	{
 
 		$application = new Application();
 
@@ -28,5 +32,8 @@ class Cli {
 
 
 	}
+
+
+
 
 }
