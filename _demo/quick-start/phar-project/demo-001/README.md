@@ -74,8 +74,8 @@ or run
 
 ## Symfony
 
-* [symfony/filesystem](https://symfony.com/doc/current/components/filesystem.html)
 * [symfony/console](https://symfony.com/doc/current/components/console.html)
+* [symfony/filesystem](https://symfony.com/doc/current/components/filesystem.html)
 
 
 
