@@ -1,0 +1,28 @@
+{
+    "name": "cute/demo",
+    "description": "The demo project for filesystem",
+    "type": "project",
+    "license": "MIT",
+    "homepage": "https://github.com/samwhelp/note-about-php-composer",
+    "config": {
+        "vendor-dir": "lib/vendor"
+    },
+    "authors": [
+        {
+            "name": "developer",
+            "email": "developer@home.heaven",
+            "homepage": "https://samwhelp.github.io/note-about-php-composer/"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Cute\\": "sys/src/Cute",
+            "App\\": "app/src/App",
+            "Maintain\\": "sys/src/Maintain"
+        }
+    },
+    "require": {
+        "symfony/filesystem": "^7.1",
+        "symfony/console": "^7.1"
+    }
+}
