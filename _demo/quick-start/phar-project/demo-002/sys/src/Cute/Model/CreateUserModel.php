@@ -21,9 +21,10 @@ use Symfony\Component\Filesystem\Path;
 
 
 
-class DemoModel {
+class CreateUserModel {
 
-	public function run () {
+	public function run ()
+	{
 		var_dump(__FILE__);
 
 

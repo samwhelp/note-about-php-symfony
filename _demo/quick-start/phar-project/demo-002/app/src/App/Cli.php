@@ -16,13 +16,25 @@ namespace App;
 use Symfony\Component\Console\Application;
 
 
+
+
 class Cli {
 
-	public function run () {
+	public function run ()
+	{
 
 		$application = new Application();
 
-		// ... register commands
+
+
+		// ## Register Commands
+
+		// `./app.php app:create-user` or `demo.phar app:create-user`
+		$application->add(new Command\CreateUserCommand());
+
+
+
+
 
 		$application->run();
 
