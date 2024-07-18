@@ -76,10 +76,15 @@ run
 run
 
 ``` sh
-./demo.phar help app:create-user
+./demo.phar app:create-user test
 ```
 
 
+run
+
+``` sh
+./demo.phar app:create-user --user-role=Admin adm
+```
 
 
 ## Link
