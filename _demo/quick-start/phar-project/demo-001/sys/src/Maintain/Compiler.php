@@ -26,7 +26,7 @@ class Compiler {
 
 
 
-	function __construct()
+	function __construct ()
 	{
 
 		//$this->_ProjectRootDirPath = dirname(dirname(dirname(__DIR__)));
@@ -141,7 +141,6 @@ EOF, $target_phar_file_name, $target_phar_file_name, time());
 
 		return $this;
 	}
-
 
 
 
