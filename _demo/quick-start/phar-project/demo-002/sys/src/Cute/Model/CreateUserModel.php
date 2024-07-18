@@ -38,6 +38,8 @@ class CreateUserModel {
 		$user_name = $this->_UserName;
 		echo("\n## User Name Input: {$user_name} \n");
 
+		$user_title = $this->_UserTitle;
+		echo("\n## User Title Input: {$user_title} \n");
 
 
 		$filesystem = new Filesystem();
@@ -49,7 +51,9 @@ class CreateUserModel {
 		//https://www.php.net/manual/en/function.file-put-contents.php
 
 		$user_db_file_path = $user_db_dir_path . '/' . $user_name;
-		$user_db_content = "UserName: {$user_name}\n";
+		$user_db_content = '';
+		$user_db_content .= "UserName: {$user_name}\n";
+		$user_db_content .= "UserTitle: {$user_title}\n";
 		file_put_contents($user_db_file_path, $user_db_content);
 		echo("\n## Create User : [{$user_name}]({$user_db_file_path}) \n");
 		echo("\n> $ `cat {$user_db_file_path}` \n");
@@ -66,6 +70,19 @@ class CreateUserModel {
 	{
 
 		$this->_UserName = $val;
+
+		return $this;
+	}
+
+
+
+
+	protected string $_UserTitle = '';
+
+	public function setUserTitle (string $val)
+	{
+
+		$this->_UserTitle = $val;
 
 		return $this;
 	}

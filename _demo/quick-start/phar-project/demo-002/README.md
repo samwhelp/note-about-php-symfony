@@ -64,6 +64,22 @@ or run
 ```
 
 
+## phar usage
+
+run
+
+``` sh
+./demo.phar help app:create-user
+```
+
+
+run
+
+``` sh
+./demo.phar help app:create-user
+```
+
+
 
 
 ## Link

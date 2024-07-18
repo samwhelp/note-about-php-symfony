@@ -16,6 +16,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 use Symfony\Component\Console\Input\InputArgument;
+use Symfony\Component\Console\Input\InputOption;
 
 
 // the name of the command is what users type after "php bin/console"
@@ -32,6 +33,7 @@ class CreateUserCommand extends Command {
 
 		(new \Cute\Model\CreateUserModel())
 			->setUserName($input->getArgument('username'))
+			->setUserTitle($input->getOption('user-title'))
 			->run();
 
 
@@ -79,11 +81,23 @@ class CreateUserCommand extends Command {
 		;
 
 
-		$this
-			// configure an argument
-			->addArgument('username', InputArgument::REQUIRED, 'The username of the user.')
-			// ...
-		;
+		// ## https://symfony.com/doc/current/console/input.html#using-command-arguments
+		$this->addArgument(
+			'username',
+			InputArgument::REQUIRED,
+			'The user name of the user.'
+		);
+
+
+		// ## https://symfony.com/doc/current/console/input.html#using-command-options
+		$this->addOption(
+			'user-title',
+			null,
+			InputOption::VALUE_OPTIONAL,
+			'The user title of the user.',
+			''
+		);
+
 
 	}
 
