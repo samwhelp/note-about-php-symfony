@@ -49,7 +49,7 @@ or run
 
 
 
-## build app
+## build phar
 
 run
 
