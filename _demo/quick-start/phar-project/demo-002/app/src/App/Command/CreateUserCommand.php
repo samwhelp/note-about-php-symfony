@@ -30,9 +30,10 @@ class CreateUserCommand extends Command {
 		// ... put here the code to create the user
 
 
-		$model = new \Cute\Model\CreateUserModel();
+		(new \Cute\Model\CreateUserModel())
+			->setUserName($input->getArgument('username'))
+			->run();
 
-		$model->run();
 
 		// this method must return an integer number with the "exit status code"
 		// of the command. You can also use these constants to make code more readable

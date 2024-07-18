@@ -23,7 +23,8 @@ use Symfony\Component\Filesystem\Path;
 
 class Compiler {
 
-	function __construct() {
+	function __construct ()
+	{
 
 		//$this->_ProjectRootDirPath = dirname(dirname(dirname(__DIR__)));
 
@@ -33,7 +34,8 @@ class Compiler {
 	}
 
 
-	public function run () {
+	public function run ()
+	{
 
 		//ini_set('phar.readonly', 0);
 
@@ -127,7 +129,8 @@ EOF, $target_phar_file_name, $target_phar_file_name, time());
 
 	protected string $_ProjectRootDirPath = '';
 
-	public function setProjectRootDirPath (string $val) {
+	public function setProjectRootDirPath (string $val)
+	{
 
 		$this->_ProjectRootDirPath = $val;
 
@@ -140,7 +143,8 @@ EOF, $target_phar_file_name, $target_phar_file_name, time());
 
 	protected string $_TargetPharFileName = 'demo.phar';
 
-	public function setTargetPharFileName (string $val) {
+	public function setTargetPharFileName (string $val)
+	{
 
 		$this->_TargetPharFileName = $val;
 
