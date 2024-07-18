@@ -48,6 +48,24 @@ or run
 
 
 
+
+## build app
+
+run
+
+``` sh
+php build.php
+```
+
+or run
+
+``` sh
+./build.php
+```
+
+
+
+
 ## Link
 
 * [PHP Composer](https://getcomposer.org/)
