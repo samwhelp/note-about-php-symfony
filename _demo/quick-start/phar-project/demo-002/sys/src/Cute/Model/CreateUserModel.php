@@ -41,6 +41,10 @@ class CreateUserModel {
 		$user_title = $this->_UserTitle;
 		echo("\n## User Title Input: {$user_title} \n");
 
+		$user_role = $this->_UserRole;
+		echo("\n## User Role Input: {$user_role} \n");
+
+
 
 		$filesystem = new Filesystem();
 		$user_db_dir_path = Path::normalize(sys_get_temp_dir() . '/symfony/demo-project/db/user');
@@ -54,6 +58,7 @@ class CreateUserModel {
 		$user_db_content = '';
 		$user_db_content .= "UserName: {$user_name}\n";
 		$user_db_content .= "UserTitle: {$user_title}\n";
+		$user_db_content .= "UserRole: {$user_role}\n";
 		file_put_contents($user_db_file_path, $user_db_content);
 		echo("\n## Create User : [{$user_name}]({$user_db_file_path}) \n");
 		echo("\n> $ `cat {$user_db_file_path}` \n");
@@ -83,6 +88,19 @@ class CreateUserModel {
 	{
 
 		$this->_UserTitle = $val;
+
+		return $this;
+	}
+
+
+
+
+	protected string $_UserRole = 'Normal';
+
+	public function setUserRole (string $val)
+	{
+
+		$this->_UserRole = $val;
 
 		return $this;
 	}

@@ -34,6 +34,7 @@ class CreateUserCommand extends Command {
 		(new \Cute\Model\CreateUserModel())
 			->setUserName($input->getArgument('username'))
 			->setUserTitle($input->getOption('user-title'))
+			->setUserRole($input->getOption('user-role'))
 			->run();
 
 
@@ -97,6 +98,16 @@ class CreateUserCommand extends Command {
 			'The user title of the user.',
 			''
 		);
+
+
+		$this->addOption(
+			'user-role',
+			'r',
+			InputOption::VALUE_OPTIONAL,
+			'The user role of the user.',
+			'Normal'
+		);
+
 
 
 	}
