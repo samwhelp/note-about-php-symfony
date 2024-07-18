@@ -82,6 +82,7 @@ or run
 ## Symfony / Docs
 
 * Console Commands / [Creating a Command](https://symfony.com/doc/current/console.html#creating-a-command)
+* [Console Input (Arguments & Options)](https://symfony.com/doc/current/console/input.html)
 
 
 
