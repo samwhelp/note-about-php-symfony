@@ -3,7 +3,7 @@
 namespace App;
 
 
-class Demo {
+class Cli {
 
 	public function run () {
 
