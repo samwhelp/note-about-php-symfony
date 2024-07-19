@@ -104,8 +104,7 @@ define('THE_PRJ_ROOT_DIR_PATH', 'phar://%s');
 define('THE_BUILD_TIMESTAMP', '%s');
 define('THE_APP_FILE_PATH', realpath(__FILE__));
 require_once(THE_PRJ_ROOT_DIR_PATH . '/boot/start/main.php');
-__HALT_COMPILER();
-?>
+__HALT_COMPILER(); ?>
 EOF, $target_phar_file_name, $target_phar_file_name, time());
 
 		//echo $stub;
